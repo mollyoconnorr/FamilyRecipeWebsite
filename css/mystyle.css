@@ -1,0 +1,306 @@
+* {
+  font-family: "Lucida Console","Courier New", monospace;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+
+
+
+
+/* HEADER STUFF */
+header{
+  background-image: url(../images/headerbackground.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 850px) {
+  .main-header{
+      background-image: url(../images/headerbackground.jpg);
+      background-size: cover;
+      padding-top: 125x;
+      padding-bottom: 50px;
+    }  
+}
+h1 {
+  background-color:rgba(0, 0, 0, 0.32);
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: white;
+  letter-spacing: .1em;
+  text-align: center;
+  margin: (0,0,0,0);
+  font-weight: bolder;
+  padding:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.header-paragraph {
+  margin: 0;
+  font-size: .6em;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  letter-spacing: .1em;
+  font-weight: lighter;
+}
+.header-button {
+  background-color: rgb(229, 184, 139);
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin-bottom: 0px;
+}
+
+
+
+
+/* BASIC PARAGRAPH AND FONT STYLES*/
+.paragraph {
+  margin: 1rem;
+  font-size: 1rem;
+  padding: 10px;
+  color: rgb(114, 114, 114);
+  letter-spacing: .05rem;
+  line-height: 1.4rem;
+  font-weight: lighter;
+}
+.centered-paragraph {
+  margin: 0;
+  font-size: .9rem;
+  color: rgb(114, 114, 114);
+  text-align: center;
+  font-weight: lighter;
+}
+.bold-words {
+  color: black;
+  font-weight: bolder;
+}
+.second-paragraph {
+  margin: 1rem;
+  color: rgb(114, 114, 114);
+  letter-spacing: .05em;
+  line-height: 1.4em;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.green-font {
+  color:  green;
+}
+
+
+
+
+
+/* ALIGNMENT OF CONTAINERS AND BOXES */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left {
+  float:left;
+  padding-left: 150px;
+}
+.container-center {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 650px;
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.container-left {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 70%;
+  padding: 25px;
+  padding-top: 50px;
+}
+
+@media only screen and (min-width: 850px) {
+  .container-left {
+    text-align: left;
+    padding: 50px;
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
+}
+.container-right {
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 70%;
+  padding: 25px;
+  padding-top: 50px;
+}
+@media only screen and (min-width: 850px) {
+  .container-right {
+    text-align: right;
+    padding-top: 50px;
+    padding: 50px;
+  }
+
+}
+.flex-container {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-around;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-bottom: 2.5rem;
+  max-width: 55rem;
+}
+@media only screen and (min-width: 950px) {
+  .flex-container {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2.5rem;
+    max-width: 55rem;
+    }
+  }
+
+
+
+
+
+/* TOMATO AND GARLIC IMAGE ALIGNMENT */
+.tomato-image {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 250px;
+  height: auto;
+  padding-top: 0px;
+}
+@media only screen and (min-width: 850px) {
+  .tomato-image {
+    float: left;
+    padding-left: 50px;
+    width: 300px;
+    height: auto;
+  }
+}
+.garlic-image {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 250px;
+  height: auto;
+}
+@media only screen and (min-width: 850px) {
+  .garlic-image {
+    float: right;
+    padding-right: 50px;
+    width: 300px;
+    height: auto;
+  }
+}
+
+
+
+/* BUTTON STUFF */
+.buttonstyle {
+  background-color: white;
+  text-decoration-color: green;
+  padding: 8px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: .8rem;
+  cursor: pointer;
+  height: 225px;
+  width: 175px;
+  box-shadow:0 0 5px;
+  box-shadow: black;
+  border-color: black;
+  border-width: .05rem;
+}
+.buttontitles {
+  color:black;
+  font-size: 1rem;
+}
+.button-images {
+  width: 70px;
+  height: auto;
+}
+.footerbutton {
+  background-color: rgb(229, 184, 139);
+  border: none;
+  color: white;
+  padding: 1.3rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  border-radius: .75rem;
+  margin-bottom: 5rem;
+  margin-top: 2.75rem;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+/* MENU STUFF */
+.dropbtn {
+  border: none;
+  float: left;
+  padding-left: 1.75rem;
+  padding-top: 1.75rem;
+  background-color: transparent;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:white;
+  padding-left: 5rem;
+  width: 100%;
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: .9rem;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(229, 184, 139);}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+
+
+
+
+.familyphotos {
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  max-width: 40rem;
+  height: auto;
+}
+
+

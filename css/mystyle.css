@@ -156,6 +156,7 @@ h1 {
   background-color: transparent;
   justify-content: space-around;
   margin-left: 6rem;
+  margin-left: 6rem;
   margin-right: 6rem;
   padding-bottom: 2.5rem;
   max-width: 55rem;
@@ -270,10 +271,13 @@ h1 {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color:white;
-  padding-left: 5rem;
-  width: 100%;
+  position: fixed; /* important: fixed makes it relative to the screen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -281,7 +285,7 @@ h1 {
   padding: 1rem;
   text-decoration: none;
   display: block;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: rgb(229, 184, 139);}

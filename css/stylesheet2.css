@@ -69,14 +69,13 @@ html, body {
     background-color: rgb(236, 236, 236);
   }
 
-.home-menu a {
-    font-size: 2.1em;
-}
+  .home-menu a {
+    font-size: 1.3em;
+  }
 
   .container-center {
     margin-left:auto;
     margin-right:auto;
-    max-width: 650px;
     padding-top: 25px;
     text-align: center;
   }
@@ -121,30 +120,30 @@ html, body {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color:white;
-  padding-left: 75px;
-  width: 100%;
+    display: none;
+    position: fixed; /* important: fixed makes it relative to the screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: block;
-  font-size: .9em;
+    color: black;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: rgb(229, 184, 139);}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: transparent;}
+down:hover .dropbtn {background-color: transparent;}
 
 
 .meat-header {
@@ -156,7 +155,6 @@ html, body {
 .meat-header {
     background-image: url(../images/meatheader.jpg);
     background-size: cover;
-    padding-top: 125x;
     padding-bottom: 50px;
   }
 }
@@ -170,7 +168,6 @@ html, body {
 .side-header {
     background-image: url(../images/sideheaderpic.jpg);
     background-size: cover;
-    padding-top: 125x;
     padding-bottom: 50px;
   }
 }
@@ -185,7 +182,6 @@ html, body {
 .breakfast-header {
     background-image: url(../images/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
     background-size: cover;
-    padding-top: 125x;
     padding-bottom: 50px;
   }
 }
@@ -200,7 +196,6 @@ html, body {
 .breakfast-header {
     background-image: url(../images/breakfastheader.jpg);
     background-size: cover;
-    padding-top: 125x;
     padding-bottom: 50px;
   }
 }
@@ -215,7 +210,6 @@ html, body {
 .salad-header {
     background-image: url(../images/Saladheader\ 2.jpg);
     background-size: cover;
-    padding-top: 125x;
     padding-bottom: 50px;
   }
 }
@@ -230,7 +224,6 @@ html, body {
 .entree-header {
     background-image: url(../images/Entreeheader.jpg);
     background-size: cover;
-    padding-top: 100x;
     padding-bottom: 50px;
   }
 }
@@ -245,7 +238,6 @@ html, body {
 .salsa-header {
     background-image: url(../images/Salsa.jpg);
     background-size: cover;
-    padding-top: 100x;
     padding-bottom: 50px;
   }
 }
@@ -260,7 +252,6 @@ html, body {
 .dessert-header {
     background-image: url(../images/dessertheader.jpg);
     background-size: cover;
-    padding-top: 100x;
     padding-bottom: 50px;
   }
 }
@@ -293,9 +284,6 @@ html, body {
 .soup-header {
     background-image: url(../images/soup.jpg);
     background-size: cover;
-    padding-top: 100x;
     padding-bottom: 50px;
   }
-
-
 }
